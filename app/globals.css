@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif,
+}
+
+@layer components {
+  .link-location {
+    @apply uppercase text-white font-semibold hover:underline text-xs lg:text-sm;
+  }
+
+  .title {
+    @apply text-white font-extrabold text-4xl mb-2 mx-2 md:text-5xl lg:text-7xl;
+  }
+}
+
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('/HelveticaNeueBold.otf') format('otf');
+  font-weight: normal;
+  font-style: bold;
+}
+
+.text-title {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bold;
+}
